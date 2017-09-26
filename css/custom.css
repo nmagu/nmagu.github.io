@@ -1,0 +1,42 @@
+/*.place_of_interest{
+	height: 900px;
+	background-color: #fff;
+}*/
+.slider-place .owl-nav div{
+	background: #fff none repeat scroll 0 0;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 20px;
+	transform: translateY(-50%);
+	width: 40px;
+
+
+
+}
+.slider-place .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.place_of_interest{
+	margin-top: 15px;
+}
+/*.owl-item{
+	height: 380px;
+	width: 280px;
+}*/
+
+.slider-place .item-owl h3 {
+	position: absolute;
+	color: #fff;
+	font-weight: bold;
+	text-transform: capitalize;
+	
+}
+.owl-carousel .owl-item{
+	height: 285px;
+	width: auto;
+}
