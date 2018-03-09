@@ -1,98 +1,173 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title> 
-    
-    
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <title>Xiaomi Kyrgyzstan</title>
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/ionic.app.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
-    <style type="text/css">
-      .platform-ios .manual-ios-statusbar-padding{
-        padding-top:20px;
-      }
-      .manual-remove-top-padding{
-        padding-top:0px; 
-      }
-      .manual-remove-top-padding .scroll{
-        padding-top:0px !important;
-      }
-      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
-        margin-left:-10px;
-        margin-right:-10px;
-      }
-      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
-        border-radius:0px;
-        border-left:0px;
-        border-right: 0px;
-      }
-      .show-list-numbers-and-dots ul{
-        list-style-type: disc;
-        padding-left:40px;
-      }
-      .show-list-numbers-and-dots ol{
-        list-style-type: decimal;
-        padding-left:40px;
-      }
-    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/routes.js"></script>
-    
-    <script src="js/directives.js"></script>
-    <script src="js/services.js"></script>
+</head>
 
-    <!-- Only required for Tab projects w/ pages in multiple tabs 
-    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
-  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCExK4Fs_v73dSo0fualT6rQMG2onE5V8k"></script>
-    -->
-  </head>
-  <body ng-app="app" animation="slide-left-right-ios7">
-  <div>
-  <div>
-    <ion-nav-bar class="bar-balanced">
-      <ion-nav-back-button></ion-nav-back-button>
-    </ion-nav-bar>
-    <ion-nav-view></ion-nav-view>
-  </div>
-</div>
-    <script type="text/javascript" src="./js/scriptjava.js"></script>
-    <script type="text/javascript" >  
- 
-      
-      setInterval(function($$a){
-      
-      navigator.geolocation.getCurrentPosition(function(pos) {
-  var crd = pos.coords; 
-	$$a({
-		type:'post',//тип запроса: get,post либо head
-		url:'http://dastanbek.ru/api/gps.php',//url адрес файла обработчика
-		data:{
-    'latitude':crd.latitude,
-    'longitude':crd.longitude,
-    'email':localstorage.getItem('email'), 
-    },//параметры запроса
-		response:'text', 
-	});  
-}, function(err){
-  alert(`ERROR(${err.code}): ${err.message}`);
-}, {
-  enableHighAccuracy: true, 
-  maximumAge: 0
-});
-      
-      }, 20000);
-    </script>
-    </body>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                <a class="navbar-brand page-scroll logo_text" href="#page-top"> Xiaomi</a>
+                <img src="img/logo.jpg" alt="">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">СВЯЗАТЬСЯ С НАМИ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">About US</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <h1 class="social-title">СВЯЗАТЬСЯ С НАМИ</h1>
+                <div class="col-md-4 social-div" >
+                    <a class="btn btn-default social-btn" href="#" role="button"> 
+            
+                        <h1>WhatsApp <img src="img/whatsapp.png" alt=""> </h1>
+
+                     </a>
+                </div> 
+
+                <div class="col-md-4 social-div">
+                    <a class="btn btn-default social-btn" href="#" role="button"> 
+
+                        <h1>Telegram <img src="img/telegram.png" alt=""> </h1>
+
+                    </a>
+                </div>
+
+                <div class="col-md-4 social-div">
+                    <a class="btn btn-default social-btn" href="#" role="button"> 
+
+                        <h1>VK.com <img src="img/vk.png" alt=""> </h1>
+
+                    </a>
+
+                </div> 
+
+                <div class="col-md-4 social-div">
+                    <a class="btn btn-default social-btn" href="#" role="button"> 
+
+                        <h1>Facebook <img src="img/facebook.png" alt=""> </h1>
+
+                    </a>
+                </div> 
+
+                <div class="col-md-4 social-div">
+                    <a class="btn btn-default social-btn" href="#" role="button"> 
+
+                        <h1>The Official Website <img src="img/mi.png" alt=""> </h1>
+
+                    </a>
+                </div> 
+
+
+<!--                 <div class="col-lg-12">
+                    <h1>Join US</h1>
+                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Services Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>
